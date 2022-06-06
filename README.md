@@ -1,5 +1,5 @@
 # zines
-A repository for storing extensible zines. This is as much a repository for text and content as for the typesetting.
+A repository for storing extensible zines. This is as much a repository for text and content as for typesetting.
 
 Zines: 
 ## Songbook
