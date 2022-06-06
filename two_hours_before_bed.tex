@@ -1,0 +1,552 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage{geometry}
+\usepackage{printsudoku}
+\usepackage{enumitem,amssymb}
+\usepackage{pifont}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\newlist{todolist}{itemize}{2}
+\setlist[todolist]{label=$\square$}
+\newcommand*{\Lpack}[1]{\textsf{#1}}
+%\pagenumbering{gobble}
+%\fancypagestyle{plain}{%
+%\fancyhf{} % clear all header and footer fields
+%\fancyfoot[C]{\bfseries \thepage} % except the center
+%\renewcommand{\headrulewidth}{0pt}
+%\renewcommand{\footrulewidth}{0pt}}
+% \pagestyle{empty}
+%\renewcommand{\headrulewidth}{0pt}
+%\fancyhf{}
+% \noversenumbers
+\title{Things to do two hours before you go to bed without screens.}
+\date{}
+\begin{document}
+\renewcommand{\thesection}{}\maketitle
+\clearpage
+\begin{textit}
+  \tableofcontents
+\end{textit}
+
+\section*{Hi!}
+Sleeping is something we all like to do. If youre like me, a lot of the things you enjoy doing during the day involves screens.
+But screens are not good to look at before you go to bed - I guess its the blue light, but probably its also the amount of information
+that tends to go with it. As almost everybody has heard by now - our minds are not evolved for the amount of information we get today.
+
+There may be research that proves that screens close to bedtime are bad for your sleep, but for me its enough that I have noticed that
+it seems to have that effect on me personally. If you feel the same, hopefully this booklet will be helpful! 
+This booklet is not intended to be read cover to cover, but rather to be hung on your bulletin-board for some inspiration when you really want
+to watch Rick and Morty (or whatever is your poison), but can see nighttime approaching...
+\\
+
+
+\emph{This is useless unless you figure out when you're bedtime is... Personally, I like to sleep 9 hours, but thats up to you. : ) }
+\\
+
+
+
+
+\newpage
+
+\section{Sudoku}
+The goal of sudoku is to fill each subsquare with each of the numbers 1-9. Every horizontal and vertical row in the large square should also contain each of the numbers 1-9.
+\\
+Good luck! 
+
+
+\cluefont{\LARGE}
+\cellsize{2.25\baselineskip}
+
+\pagestyle{headings}
+
+\renewcommand*{\puzzlefile}{se5.sud}
+\writepuzzle%
+{.2...5863}{56.2.3.9.}{.3...7251}%
+{..975....}{..6..47.9}{.7..286..}%
+{6.58...7.}{8....1..6}{3.7.6..4.}%
+[SSBL easy 5]
+\vfill
+\begin{minipage}{0.95\linewidth}\begin{center}
+%SE5 (easy) \\
+\sudoku{se5.sud}
+\end{center}\end{minipage}
+
+\renewcommand*{\puzzlefile}{se10.sud}
+\writepuzzle%
+{..6.497..}{.82.1.6..}{79..8.145}%
+{649.5.27.}{..7.6..5.}{.3..72.96}%
+{.2....81.}{.7..28...}{......5.7}%
+%[SSBL easy 10]
+\vfill
+\begin{minipage}{0.95\linewidth}\begin{center}
+\sudoku{se10.sud}
+\end{center}\end{minipage}
+
+\renewcommand*{\puzzlefile}{se15.sud}
+\writepuzzle%
+{4.67.39.2}{..16.84..}{.7...4..1}%
+{5...4.21.}{.2.....6.}{.68.7...9}%
+{6..5...9.}{..24.93..}{9.53.17.4}%
+%[SSBL easy 15]
+\vfill
+\begin{minipage}{0.95\linewidth}\begin{center}
+%SE15 (easy) \\
+\sudoku{se15.sud}
+\end{center}\end{minipage}
+
+\renewcommand*{\puzzlefile}{se20.sud}
+\writepuzzle%
+{36.9..5..}{..54.8.2.}{.....78.9}%
+{2....3.68}{.83.9....}{.4.7..2.3}%
+{6.71..3..}{13.8.59.2}{..9.7..56}%
+%[SSBL easy 20]
+\vfill
+\begin{minipage}{0.95\linewidth}\begin{center}
+%SE20 (easy) \\
+\sudoku{se20.sud}
+\end{center}\end{minipage}
+
+\renewcommand*{\puzzlefile}{se25.sud}
+\writepuzzle%
+{....63.5.}{6.5.1.839}{..1...2..}%
+{823...7..}{.5...7...}{.64.9...1}%
+{4.25796.3}{.9.1.65.8}{.1...89.7}%
+[SSBL easy 25]
+\vfill
+\begin{minipage}{0.95\linewidth}\begin{center}
+%SE25 (easy) \\
+\sudoku{se25.sud}
+\end{center}\end{minipage}
+
+\renewcommand*{\puzzlefile}{se30.sud}
+\writepuzzle%
+{.3.12....}{1.87..4.6}{..98....1}%
+{5....7.3.}{.73.9.2.4}{.92..65..}%
+{.4...8.5.}{3...7...8}{2..4.596.}%
+%[SSBL easy 30]
+\vfill
+\begin{minipage}{0.95\linewidth}\begin{center}
+%SE30 (easy) \\
+\sudoku{se30.sud}
+\end{center}\end{minipage}
+
+\begin{comment}
+\renewcommand*{\puzzlefile}{tg5.sud}
+\writepuzzle%
+{.6.1.9.8.}{.19...74.}{2.......1}%
+{..79.26..}{.3.....2.}{..14.35..}%
+{1.......5}{.75...23.}{.9.5.6.7.}%
+[DT2 gentle 5]
+\vfill
+\begin{minipage}{0.95\linewidth}\begin{center}
+%TG5 (gentle) \\
+\sudoku{tg5.sud}
+\end{center}\end{minipage}
+
+\renewcommand*{\puzzlefile}{tg10.sud}
+\writepuzzle%
+{....96..4}{..1.....2}{56...8...}%
+{2.8....9.}{9.63.52.7}{.3....4.6}%
+{...9...58}{7.....9..}{8..45....}%
+[DT2 gentle 10]
+\vfill
+\begin{minipage}{0.95\linewidth}\begin{center}
+%TG10 (gentle) \\
+\sudoku{tg10.sud}
+\end{center}\end{minipage}
+
+\end{comment}
+
+\renewcommand*{\puzzlefile}{tg15.sud}
+\writepuzzle%
+{...1.8...}{.57...18.}{98.....26}%
+{..67419..}{.........}{..42536..}%
+{72.....94}{.19...73.}{...3.9...}%
+[DT2 gentle 15]
+\vfill
+\begin{minipage}{0.95\linewidth}\begin{center}
+%TG15 (gentle) \\
+\sudoku{tg15.sud}
+\end{center}\end{minipage}
+
+\renewcommand*{\puzzlefile}{tg20.sud}
+\writepuzzle%
+{...7.9...}{.8.3.6.5.}{7.9...6.8}%
+{..42.18..}{.6.....4.}{..35.41..}%
+{9.2...5.7}{.4.8.7.1.}{...1.2...}%
+[DT2 gentle 20]
+\vfill
+\begin{minipage}{0.95\linewidth}\begin{center}
+%TG20 (gentle) \\
+\sudoku{tg20.sud}
+\end{center}\end{minipage}
+\vspace{1cm}
+
+If you enjoyed solving these - there are plenty of sudoku files on the internet, to be downloaded and printed well before bedtime. : )
+\newpage
+\section{Mandalas}
+ \pagestyle{empty}
+
+Here are 5 mandalas you can colour.
+\vspace{3cm}
+\setlength\oddsidemargin{\dimexpr(\paperwidth-\textwidth)/2 - 1in\relax}
+\setlength\evensidemargin{\oddsidemargin}
+
+\includegraphics[width=15cm]{marmot}
+\\
+\includegraphics[width=15cm]{mandala2}
+\\
+\includegraphics[width=15cm]{mandala3}
+\\
+\includegraphics[width=15cm]{mandala4}
+\\
+\includegraphics[width=15cm]{mandala5}
+%\includegraphics[width=15cm, height=15cm]{16724}
+%\includegraphics[width=15cm, height=15cm]{16724}
+\\
+If you enjoyed colouring these - there are plenty of mandala files on the internet, to be downloaded and printed well before bedtime. : )
+\newpage
+\section{Inception tic-tac-toe}
+If you have a companion in your non-screen-ness you can play inception tic-tac-toe!
+Its just like normal tic-tac-toe - every turn you put a x or o in one of the boxes - but you don't win until you have three won sub-boxes in a row.
+Like in this pretty example:
+\\
+\includegraphics[width=4cm]{tic_tac_toe}
+
+\renewcommand*{\puzzlefile}{se5.sud}
+\writepuzzle%
+{.........}{.........}{.........}%
+{.........}{.........}{.........}%
+{.........}{.........}{.........}%
+[SSBL easy 5]
+\vfill
+\begin{minipage}{0.95\linewidth}\begin{center}
+%SE5 (easy) \\
+\sudoku{se5.sud}
+\end{center}\end{minipage}
+
+\renewcommand*{\puzzlefile}{se5.sud}
+\writepuzzle%
+{.........}{.........}{.........}%
+{.........}{.........}{.........}%
+{.........}{.........}{.........}%
+[SSBL easy 5]
+\vfill
+\begin{minipage}{0.95\linewidth}\begin{center}
+%SE5 (easy) \\
+\sudoku{se5.sud}
+\end{center}\end{minipage}
+
+\renewcommand*{\puzzlefile}{se5.sud}
+\writepuzzle%
+{.........}{.........}{.........}%
+{.........}{.........}{.........}%
+{.........}{.........}{.........}%
+[SSBL easy 5]
+\vfill
+\begin{minipage}{0.95\linewidth}\begin{center}
+%SE5 (easy) \\
+\sudoku{se5.sud}
+\end{center}\end{minipage}
+
+\renewcommand*{\puzzlefile}{se5.sud}
+\writepuzzle%
+{.........}{.........}{.........}%
+{.........}{.........}{.........}%
+{.........}{.........}{.........}%
+[SSBL easy 5]
+\vfill
+\begin{minipage}{0.95\linewidth}\begin{center}
+%SE5 (easy) \\
+\sudoku{se5.sud}
+\end{center}\end{minipage}
+
+I think you will manage to make your own if the ready-made boards run out. ; )
+\newpage
+\section{Suggestion-lists}
+
+
+One suggested use for these: Rip one out per week and put up on your refrigerator. Check the ones you've done.
+Obviously its quite personal what shit you find fun to do, so there are five blank checkboxes where you can add your own stuff (if you want - obviously). 
+
+
+\noindent\dotfill
+\ding{33}\dotfill
+\raisebox{-0.25\baselineskip}{\ding{34}}\dotfill
+\raisebox{-0.50\baselineskip}{\ding{35}}\dotfill
+
+
+
+\begin{itemize}
+  \item Idea-list for things you can do without screens.
+  \begin{todolist}
+    \item make bread (basic bread recipe further down)
+    \item take a long walk and then take a bath and read a good book (list of good books to be inserted).
+    \item write reflections on the day on paper.
+    \item drink hippie tea (ginger and honey).
+    \item Do yoga without following a video - this means you probably have to do the same routine every time. I can't do this yet - hope you can!
+    \item Play an instrument
+    \item Actually listen to a full album.
+    \item Meditate, accept yourself for who you are, chill with your faults.
+    \item Talk to a plant about the videos you would like to watch. 
+    \item Talk to a human (warning - they talk back!).
+    \item Make food for the next day and enjoy having lots of time to do it.     
+    \item \vspace {1cm}
+    \item \vspace {1cm}
+    \item \vspace {1cm}
+    \item \vspace {1cm}
+    \item \vspace {1cm}     
+    \end{todolist}
+\end{itemize}
+
+\newpage
+
+\noindent\dotfill
+\ding{33}\dotfill
+\raisebox{-0.25\baselineskip}{\ding{34}}\dotfill
+\raisebox{-0.50\baselineskip}{\ding{35}}\dotfill
+
+
+
+\begin{itemize}
+  \item Idea-list for things you can do without screens.
+  \begin{todolist}
+    \item make bread (basic bread recipe further down)
+    \item take a long walk and then take a bath and read a good book (list of good books to be inserted).
+    \item write reflections on the day on paper.
+    \item drink hippie tea (ginger and honey).
+    \item Do yoga without following a video - this means you probably have to do the same routine every time. I can't do this yet - hope you can!
+    \item Play an instrument
+    \item Actually listen to a full album.
+    \item Meditate, accept yourself for who you are, chill with your faults.
+    \item Talk to a plant about the videos you would like to watch. 
+    \item Talk to a human (warning - they talk back!).
+    \item Make food for the next day and enjoy having lots of time to do it.     
+    \item \vspace {1cm}
+    \item \vspace {1cm}
+    \item \vspace {1cm}
+    \item \vspace {1cm}
+    \item \vspace {1cm}     
+    \end{todolist}
+\end{itemize}
+\newpage
+
+\noindent\dotfill
+\ding{33}\dotfill
+\raisebox{-0.25\baselineskip}{\ding{34}}\dotfill
+\raisebox{-0.50\baselineskip}{\ding{35}}\dotfill
+
+
+
+\begin{itemize}
+  \item Idea-list for things you can do without screens.
+  \begin{todolist}
+    \item make bread (basic bread recipe further down)
+    \item take a long walk and then take a bath and read a good book (list of good books to be inserted).
+    \item write reflections on the day on paper.
+    \item drink hippie tea (ginger and honey).
+    \item Do yoga without following a video - this means you probably have to do the same routine every time. I can't do this yet - hope you can!
+    \item Play an instrument
+    \item Actually listen to a full album.
+    \item Meditate, accept yourself for who you are, chill with your faults.
+    \item Talk to a plant about the videos you would like to watch. 
+    \item Talk to a human (warning - they talk back!).
+    \item Make food for the next day and enjoy having lots of time to do it.     
+    \item \vspace {1cm}
+    \item \vspace {1cm}
+    \item \vspace {1cm}
+    \item \vspace {1cm}
+    \item \vspace {1cm}     
+    \end{todolist}
+\end{itemize}
+\newpage
+
+\noindent\dotfill
+\ding{33}\dotfill
+\raisebox{-0.25\baselineskip}{\ding{34}}\dotfill
+\raisebox{-0.50\baselineskip}{\ding{35}}\dotfill
+
+
+
+\begin{itemize}
+  \item Idea-list for things you can do without screens.
+  \begin{todolist}
+    \item make bread (basic bread recipe further down)
+    \item take a long walk and then take a bath and read a good book (list of good books to be inserted).
+    \item write reflections on the day on paper.
+    \item drink hippie tea (ginger and honey).
+    \item Do yoga without following a video - this means you probably have to do the same routine every time. I can't do this yet - hope you can!
+    \item Play an instrument
+    \item Actually listen to a full album.
+    \item Meditate, accept yourself for who you are, chill with your faults.
+    \item Talk to a plant about the videos you would like to watch. 
+    \item Talk to a human (warning - they talk back!).
+    \item Make food for the next day and enjoy having lots of time to do it.     
+    \item \vspace {1cm}
+    \item \vspace {1cm}
+    \item \vspace {1cm}
+    \item \vspace {1cm}
+    \item \vspace {1cm}     
+    \end{todolist}
+\end{itemize}
+\newpage
+
+\noindent\dotfill
+\ding{33}\dotfill
+\raisebox{-0.25\baselineskip}{\ding{34}}\dotfill
+\raisebox{-0.50\baselineskip}{\ding{35}}\dotfill
+
+
+
+\begin{itemize}
+  \item Idea-list for things you can do without screens.
+  \begin{todolist}
+    \item make bread (basic bread recipe further down)
+    \item take a long walk and then take a bath and read a good book (list of good books to be inserted).
+    \item write reflections on the day on paper.
+    \item drink hippie tea (ginger and honey).
+    \item Do yoga without following a video - this means you probably have to do the same routine every time. I can't do this yet - hope you can!
+    \item Play an instrument
+    \item Actually listen to a full album.
+    \item Meditate, accept yourself for who you are, chill with your faults.
+    \item Talk to a plant about the videos you would like to watch. 
+    \item Talk to a human (warning - they talk back!).
+    \item Make food for the next day and enjoy having lots of time to do it.     
+    \item \vspace {1cm}
+    \item \vspace {1cm}
+    \item \vspace {1cm}
+    \item \vspace {1cm}
+    \item \vspace {1cm}     
+    \end{todolist}
+\end{itemize}
+\newpage
+\section{A bread recipe and a totally objective list of great books}
+
+\subsection*{Bread Recipe}
+This is a basic bread recipe:
+\begin{itemize}
+  \item 500 g of wheat flour
+  \item 325 g of water
+  \item 10 g of salt (about 1.5 tsp)
+  \item 3 g of fresh yeast.
+\end{itemize}
+ \begin{enumerate}
+    \item Mix all ingredients together until you have a smooth silky dough    
+    \item Wait until dough doubled in size (also known as bulk fermentation). This takes on average ~8 hours
+    \item Shape a dough ball
+    \item Place in baneton or in a floured bowl
+    \item Wait until almost doubled in size (also known as proofing). This takes on
+      average 2 hours at room temperature or 24 hours in the fridge
+    \item Bake 20 minutes in preheated oven at 230°C with a bowl of water
+    \item Remove bowl of water after 20 minutes, bake another 20 minutes
+    \item Baking is finished when bread has desired brown color
+\end{enumerate}
+    Now I followed this recipe, \textbf{but ended up using 25 g of yeast and quite a lot more flour.} But if you start with this recipe and just add more flower and probably also yeast maybe it works for you too! No shade on the recipe-creator (user hendricius on github - the-bread-code), he was probably using American ingredients
+    which are probably a bit different than Swedish ingredients. The bread turned out good in the end! 
+    The ingredients are cheap, too.
+    
+\newpage
+\subsection*{A totally objective list of great books}
+Ok, so of course a book-list is one of the most subjective things you can make. But since this is partly self-therapy I'm inserting it anyway.
+This is based on a list made by me for an improvised book café a summer ago and its the books i wanted to find complemented with suggestions from friends.
+Remember to pick up a book somewhere before bedtime. The local library is your friend. : ) 
+
+\textbf{Authors, mainly of books}
+\begin{itemize}
+\item Ursula Le Guin, 
+\item Michael Ende, 
+\item Tove Jansson, 
+\item Dostoyevski, 
+\item Leo Tolstoy, 
+\item Douglas Adams
+\item Shakespeare,
+\item Kafka,
+\item Neil Gaiman,
+\item Terry Pratchett, 
+\item Mythology books illustrated by Michael Foreman, 
+\item Umberto Eco, 
+\item Edgar Allan Poe, 
+\item Stephen King,
+\item JD Salinger, 
+\item Niklas natt och dag - 1793
+\item Alexander Solsjenitsyn
+\item George Orwell, 
+\item Isaac Asimov, 
+\item Ray Bradbury,
+\item Sophocles, maybe. I guess. 
+\item Vernor Vinge, 
+\item Haruki Murakami, 
+\item Falstaff Fakir
+\item Selma Lagerlöf
+\item Cixin Liu
+\end{itemize}
+\textbf{Authors, mainly of poems}
+\\
+\begin{itemize}
+\item Baudelaire
+\item Bashao or whatever his name was, Japan - haven't read much
+\item Issa, haven't read much
+\item Nils Ferlin,
+\item Fröding, 
+\item Majakovskij
+\end{itemize}
+\textbf{Titles}
+\\
+\begin{itemize}
+\item TH White - Arthur, 
+\item Bhagavad Gita,
+\item Narnia, 
+\item The first harry potter book, 
+\item On the road, Jack Kerouack, 
+\item 5 Rings or something, some kind of welsh story, 
+\item The moon of Gomrath, 
+\item The lord of the Flies, 
+\item Beowulf, the translation by Seamus Heaney, 
+\item The Koran 
+\item The Bible
+\item Faust 
+\item Odysseus, by James Joyce,
+\end{itemize}
+
+Credits -
+\\
+The first mandala was created by LaTeX user user121799.
+\\
+The second to last mandala was created from here: https://grundschulblogs.blogspot.com/2020/07/inspirierend-mandala-1-klasse-religion.html (you can look at it when its not two hours before bedtime).
+\\
+The last mandala has a to me unknown creator - if you know who made it let me know so I can credit that person. : )
+\\
+The other two mandalas are in the public domain.
+\\
+Mandala on the very last page is made with code from LaTeX user David Carlisle
+\\
+The bread recipe is, as mentioned, from The Breadcode on Github, a repository created by Github user hendricius.
+\\
+The sudoku puzzles included here were created by Peter Wilson, who also created a LaTeX package for generating and solving sudoku - sudokubundle (available at CTAN).
+Booklet created using the free software LaTeX, emacs and Gimp and printed at our awesome hacklab Linkping in Linköping. 
+\\
+This booklet was created by David Jacobsson - you can e-mail me at david@gnyrftacode.se two hours before your bedtime. 
+
+\newpage
+% Mandala
+\begin{center}
+\begin{picture}(40,40)
+\put(00,00){\framebox(40,40){}}\put(20,20){\circle{30}}
+\put(20,20){\circle*{2}}            \linethickness{2pt}
+\put(15,01){\line(1,0){10}}\put(20,00){\line(00,01){4}}
+\put(15,39){\line(1,0){10}}\put(20,40){\line(00,-1){4}}
+\put(01,15){\line(0,1){10}}\put(00,20){\line(01,00){4}}
+\put(39,15){\line(0,1){10}}\put(40,20){\line(-1,00){4}}
+\end{picture}
+\end{center}
+\end{document}
+%%% Local Variarbles:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
+ 
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
