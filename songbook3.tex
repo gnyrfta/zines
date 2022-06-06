@@ -1,0 +1,13 @@
+% any LaTeX engine; mal-arrange-3.tex
+\documentclass[a4paper,landscape]{article}
+\usepackage{pdfpages}
+\pdfpagewidth=\paperwidth % for xelatex
+\pdfpageheight=\paperheight % for xelatex
+\begin{document}
+\includepdf[pages={-},angle=-90,nup=2x2]{booklet2.pdf}
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

@@ -1,0 +1,26 @@
+% any LaTeX engine; mal-arrange-2.tex
+% there is some shift if xelatex engine is run with letterpaper (?)
+\documentclass[a4paper]{article}
+\usepackage{ifxetex}
+\usepackage{pdfpages}
+\def\mfile{booklet1.pdf}
+\ifxetex % xelatex
+  \def\mlast{\XeTeXpdfpagecount\mfile}
+\else % pdflatex+lualatex
+  \pdfximage{\mfile}
+  \def\mlast{\pdflastximagepages}
+\fi
+%\pdfpagewidth=\paperwidth
+%\pdfpageheight=\paperheight
+\begin{document}
+\newcount\mcounter \mcounter=0
+\loop
+\advance\mcounter by 1
+\ifodd\mcounter
+  \def\mbonus{0}
+\else
+  \def\mbonus{180}
+\fi % End of \ifodd...
+\includepdf[pages={\the\mcounter},angle=\mbonus]{\mfile}
+\ifnum\mcounter<\mlast\repeat
+\end{document}

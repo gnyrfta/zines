@@ -1,0 +1,23 @@
+% any LaTeX engine; mal-arrange-4.tex
+\documentclass[a4paper]{article}
+\usepackage{ifxetex}
+\usepackage{pdfpages}
+\def\mfile{booklet3.pdf}
+\ifxetex % xelatex
+  \def\mlast{\XeTeXpdfpagecount\mfile}
+\else % pdflatex+lualatex
+  \pdfximage{\mfile}
+  \def\mlast{\pdflastximagepages}
+\fi
+\begin{document}
+\newcount\mcounter \mcounter=0
+\loop
+\advance\mcounter by 1
+\includepdf[pages={\the\mcounter},viewport=0 0 {0.5\paperheight} {\paperwidth},clip]{\mfile} % left half
+\includepdf[pages={\the\mcounter},viewport={0.5\paperheight} 0 {\paperheight} {\paperwidth},clip]{\mfile} % right half
+\ifnum\mcounter<\mlast\repeat
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
